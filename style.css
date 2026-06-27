@@ -117,7 +117,7 @@ header{
 
     font-size:28px;
 
-    color:var(--gold);
+    color:var(rgb(255, 0, 200));
 
     font-weight:700;
 
@@ -133,7 +133,7 @@ header{
 
 .nav-links a{
 
-    color:white;
+    color:wh (255, 0, 0white);
 
     font-size:15px;
 
@@ -157,7 +157,7 @@ header{
 
     height:2px;
 
-    background:var(--gold);
+    background:var(rgb(226, 0, 38));
 
     transition:.4s;
 
