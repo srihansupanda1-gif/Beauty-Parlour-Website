@@ -105,7 +105,7 @@ header{
 
     padding:20px 8%;
 
-    background:rgba(0,0,0,.55);
+    background:rgba(255,255,255,.95);
 
     backdrop-filter:blur(15px);
 
@@ -113,13 +113,27 @@ header{
 
 }
 
+.navbar.scrolled{
+
+    background:var(--black);
+
+    border-bottom:4px solid var(--gold);
+
+}
+
 .logo{
 
     font-size:28px;
 
-    color:var(rgb(255, 0, 200));
+    color:var(--black);
 
     font-weight:700;
+
+}
+
+.navbar.scrolled .logo{
+
+    color:var(--white);
 
 }
 
@@ -133,13 +147,19 @@ header{
 
 .nav-links a{
 
-    color:wh (255, 0, 0white);
+    color:var(--black);
 
     font-size:15px;
 
     transition:.35s;
 
     position:relative;
+
+}
+
+.navbar.scrolled .nav-links a{
+
+    color:var(--white);
 
 }
 
@@ -157,9 +177,29 @@ header{
 
     height:2px;
 
-    background:var(rgb(226, 0, 38));
+    background:var(--gold);
 
     transition:.4s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--black);
+
+}
+
+.navbar.scrolled .nav-links a:hover{
+
+    color:var(--white);
+
+}
+
+.nav-links a:hover::after,
+
+.navbar.scrolled .nav-links a::after{
+
+    width:0;
 
 }
 
